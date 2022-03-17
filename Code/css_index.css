@@ -1,0 +1,91 @@
+.bar{
+
+    overflow: hidden;
+    background-color:rgb(8, 134, 218);
+    padding-right: 5%;
+
+}    
+
+.bar a{
+    float: left;
+    text-decoration: none;
+    color:white;
+    padding: 14px 16px 14px 16px;
+    font-size: large;
+
+}
+
+.main{
+    background-color: rgb(61, 168, 255);
+}
+
+.bar a:hover{
+    background-color:rgb(236,197,253);
+    color: black;
+}
+
+.bar .search{
+    float: right;
+}
+
+.bar input[type=text]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+.bar button {
+    float: right;
+    padding: 7px 10px;
+    margin-top: 8px;
+    background: rgb(219, 219, 219);
+    border: none;
+    cursor: pointer;
+}
+
+.bar button:hover {
+    background: rgb(178, 194, 196);
+}
+
+.search_icon{
+    width: 15px;
+}
+
+.mainheader img{
+    width: 100%;
+}
+
+
+.secondtable{
+    width: 100%;
+}
+
+.secondtd{
+    padding-left: 5%;
+}
+
+
+.map{
+    margin: 0 5% 0 0;
+    float: right;
+    padding: 2% 0 2% 0
+
+}
+
+.footer{
+    background-image: url('footer1.jpeg');
+}
+
+
+.j{
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    width: 100%;
+    padding: 2% 0;
+}
+
+.j:hover{
+    background-color: rgb(230, 158, 111);
+    color: black;
+}

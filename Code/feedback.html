@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feedback Form</title>
+
+        <link rel="stylesheet" type="text/css" href="css_index.css">
+        <script type="text/javascript" src="index_search.js"></script>
+
+        <style type="text/css">
+        
+            body{
+                background-image: url('bg2.jpeg');
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+
+            .fbtable{
+                border: black 1px solid;
+                border-collapse: collapse;
+                background-color: whitesmoke;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+
+            .tdata{
+                padding: 3% 0% 3% 3%;
+            }
+
+            .t2data{
+                padding: 2% 0 2% 4%;
+
+            }
+
+            .t3data{
+                padding: 1% 0 1% 0;
+            }
+
+            .texts{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: large;
+                
+            }
+
+            .texts1{
+                font-size: medium;
+                font-family: 'Times New Roman', Times, serif;
+
+                
+            }
+
+            .star{
+                color: red;
+            }
+
+            .des{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: medium;
+                margin-left: 2%;
+            }
+        
+            .fbtext{
+                padding: 2%;
+                font-size: large;
+            }
+
+            .break{
+                padding-top: 3%;
+                background-color: rgb(197, 197, 197);
+            }
+
+            .button{
+                cursor: pointer;
+                background-color: rgb(3, 78, 190);
+                color: white;
+                font-size: 120%;
+                padding: 10px 20px;
+                border-radius: 13px;
+                transition-duration: 0.4s;
+            }
+
+            .button:hover{
+                background-color: rgb(4, 217, 255);
+		        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+            }
+
+            input[type=text]:hover, [type=email]:hover, textarea:hover{
+			    background-color: rgb(230, 230, 230);
+            }
+
+            input[type=radio]{
+                cursor: pointer;
+                height: 20px;
+                width: 20px;
+            }
+
+            textarea{
+                resize: none;
+                padding: 3%;
+            }
+
+
+
+
+        </style>
+
+
+    </head>
+    <body>
+
+        <div class="mainheader">
+            <img src="header_main1.png">
+    
+    
+        </div>
+        <div class="bar">
+            
+            <a class="main" href="index.html">Home</a>
+            <a href="garden.html">Gardening Tips</a>
+            <a href="tools_and_types.html">Tools and Type</a>
+            <a href="types_of_gardening.html">Types of Gardening</a>
+            <a href="shop.html">Shopping</a>
+            <a href="feedback.html">Feedback</a>
+    
+            <div class="search">
+                <form method="POST">
+                    <input type="text" placeholder="Search..." name="src">
+    
+                    <button type="submit" onclick="search(src.value)"> <img class="search_icon" src="search_icon.png"> </button>
+    
+                </form> 
+            </div>
+        </div>
+
+        <form method="POST" name="feedback_form">
+            <table class="fbtable">
+                <tr>
+                    <td colspan="5"><img src="fb.jpeg" alt="feedback photo"> </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"> 
+<pre class="des">
+Please take a few minutes to give us feedback about our service 
+by filling in this short Feedback Form. We are conducting this customer 
+feedback research in order to gauge your level of satisfaction with the quality of our service.
+</pre>
+                        
+                    </td>
+                    <td></td>
+                </tr>
+
+
+                <tr>
+                    <td class="tdata"><span class="texts">First Name <span class="star">*</span> </span></td>
+                    <td class="t2data" colspan="4"><input type="text" name="fname" class="fbtext" size="25" placeholder="Your first name" required> </td>
+                </tr>
+                
+                <tr>
+                    <td class="tdata"><span class="texts">Last Name <span class="star">*</span></span></td>
+                    <td class="t2data" colspan="4"> <input type="text" name="lname" class="fbtext" size="25" placeholder="Your last name" required> </td>
+                </tr>
+
+                <tr>
+                    <td class="tdata"><span class="texts">E-mail address <span class="star">*</span></span></td>
+                    <td class="t2data" colspan="4"> <input type="email" name="email" class="fbtext" size="25" placeholder=" Your e-mail address" required>  </td>
+                </tr>
+
+                <tr>
+                    <td class="break" colspan="5"> </td>
+                </tr>
+
+                <tr>
+                    <td ></td>
+                    <td class="t3data" colspan="4">
+                    <span class="texts1" style="margin-left: 2%;" >Very Good</span>
+                    <span class="texts1" style="margin-left: 11%;" >Good</span>
+                    <span class="texts1" style="margin-left: 16%;" >Fair</span>
+                    <span class="texts1" style="margin-left: 16%;" >Poor</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="t2data"><span class="texts">How satisfied are you with the services we provide?</span></td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating1" value="vgood"> </td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating1" value="good"> </td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating1" value="fair"> </td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating1" value="poor"> </td>
+                </tr>
+
+                <tr>
+                    <td class="t2data"><span class="texts">How satisfied are you with the content we provide?</span></td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating2" value="vgood"> </td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating2" value="good"> </td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating2" value="fair"> </td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating2" value="poor"> </td>
+                </tr>
+                
+                <tr>
+                    <td class="t2data"><span class="texts">How easy it is to used the website?</span></td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating3" value="vgood"> </td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating3" value="good"> </td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating3" value="fair"> </td>
+                    <td class="t2data"><input type="radio" class="radio1" name="rating3" value="poor"> </td>
+                </tr>
+
+                <tr>
+                    <td class="break" colspan="5"> </td>
+                </tr>
+
+                <tr>
+                    <td class="t2data"><span class="texts">Would you recommend our service to other people?</span></td>
+                    <td colspan="4"><input type="radio" id="r" class="radio1" name="rating4" value="definitely"> <span class="rt">Definitely</span> </td>
+                </tr> 
+
+                <tr>
+                    <td></td>
+                    <td style="padding-bottom: 2%;" colspan="4"><input type="radio" id="r" class="radio1" name="rating4" value="probably"> <span class="rt">Probably</span> </td>
+                </tr>  
+                
+                <tr>
+                    <td></td>
+                    <td style="padding-bottom: 2%;" colspan="4"><input type="radio" id="r" class="radio1" name="rating4" value="nsure"> <span class="rt">Not Sure</span> </td>
+                </tr> 
+
+                <tr>
+                    <td></td>
+                    <td style="padding-bottom: 2%;" colspan="4"><input type="radio" id="r" class="radio1" name="rating4" value="pnot"> <span class="rt">Probably Not</span> </td>
+                </tr> 
+
+                <tr>
+                    <td></td>
+                    <td style="padding-bottom: 2%;" colspan="4"><input type="radio" id="r" class="radio1" name="rating4" value="dnot"> <span class="rt">Definitely Not</span> </td>
+                </tr> 
+
+                <tr>
+                    <td class="break" colspan="5"> </td>
+                </tr>
+
+                <tr>
+                    <td class="tdata">What should we add/change in order to live upto your expectation?</td>
+                    <td colspan="4" class="tdata">
+                        <textarea rows="5" cols="40"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="tdata">Any comments regarding the website?</td>
+                    <td colspan="4" class="tdata">
+                        <textarea rows="5" cols="40"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;" class="tdata" colspan="5">
+                        <input type="submit" value="Submit" class="button">
+                        <input type="reset" value="Reset" class="button">
+                    </td>
+                </tr>
+
+            </table>           
+
+        </form>
+
+    </body>
+</html>
